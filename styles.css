@@ -248,18 +248,38 @@ content {
 }
 
 .trending {
-  background-color: #505050;
+  background-color: #e2e8f0;
   grid-column: 2 / 3;
   padding: 20px;
   display: grid;
   grid-template-rows: 35px 1fr;
 }
 
+.trending > p {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
 .trending-user-list {
-  outline: 1px solid black;
+  background-color: white;
+  border-radius: 5px;
   display: grid;
+  gap: 20px;
+  padding: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
 }
 
 .trending-user {
-  outline: 1px solid black;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 15px;
+}
+
+.trending-user img {
+  height: 50px;
+}
+
+.user-text p:last-child {
+  color: rgb(87, 87, 87);
 }
