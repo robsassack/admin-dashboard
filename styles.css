@@ -70,7 +70,88 @@ content {
   background-color: grey;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 75px 1fr;
+  align-items: center;
+}
+
+.search {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  height: 70px;
+}
+
+.search img {
+  padding-top: 5px;
+}
+
+.search input {
+  flex: 1 0 auto;
+  border-radius: 15px;
+  padding-left: 15px;
+  border: none;
+  background-color: #b8b8b8;
+}
+
+.user-info {
+  display: flex;
+  padding: 10px;
+  padding-right: 40px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-info .notifications {
+  height: 30px;
+}
+
+.user-info .user-icon {
+  height: 50px;
+}
+
+.user-info p {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.user-greeting {
+  display: flex;
+  padding: 10px;
+  gap: 15px;
+}
+
+.user-greeting .greeting-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1rem;
+  gap: 5px;
+}
+
+.user-greeting .greeting-text p:last-child {
+  font-size: 1.5rem;
+}
+
+.user-greeting .greeting-icon {
+  height: 80px;
+}
+
+.user-buttons {
+  display: flex;
+  gap: 30px;
+  justify-content: flex-end;
+  padding-right: 40px;
+}
+
+.user-buttons button {
+  background-color: #0ea5e9;
+  border: none;
+  color: white;
+  padding: 10px 40px;
+  border-radius: 15px;
+  font-weight: bold;
 }
 
 .main-content {
